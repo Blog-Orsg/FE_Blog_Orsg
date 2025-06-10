@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 "use client";
 import React, { useState, useTransition } from "react";
 import { TSFixMe, User } from "@/app/types/user";

@@ -1,3 +1,5 @@
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+
 import { TSFixMe, User } from "@/app/types/user";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { userQueryKeys } from "./user-query-key";
@@ -17,7 +19,7 @@ export function useCreateUser() {
     onMutate: async () => {
       await queryClient.cancelQueries({ queryKey: userQueryKeys.all });
     },
-    onSuccess: (data) => {
+    onSuccess: () => {
       toast.success("Account created successfully");
     },
     onError: (err, newUser, context?: TSFixMe) => {

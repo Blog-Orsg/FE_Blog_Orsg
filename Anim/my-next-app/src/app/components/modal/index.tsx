@@ -1,5 +1,4 @@
 import { useCardModal } from "@/app/hooks/useCardModal";
-import { useParams } from "next/navigation";
 import * as React from "react";
 const CardModal = () => {
   const { id, isOpen, onClose } = useCardModal((state) => ({
@@ -7,8 +6,6 @@ const CardModal = () => {
     isOpen: state.isOpen,
     onClose: state.onClose,
   }));
-
-  const params = useParams();
 
   return (
     <div

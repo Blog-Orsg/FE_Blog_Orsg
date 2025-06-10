@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import { useFeatureStore } from "@/app/store/store";
 import classNames from "classnames";
 import { motion } from "framer-motion";

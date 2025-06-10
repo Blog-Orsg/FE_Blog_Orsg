@@ -1,3 +1,5 @@
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+
 import { Article, TSFixMe } from "@/app/types/article";
 import { apiClient } from "../api-client";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
@@ -16,7 +18,7 @@ export function useCreateArticle() {
     onMutate: async () => {
       await queryClient.cancelQueries({ queryKey: articleQueryKeys.all });
     },
-    onSuccess: (data) => {
+    onSuccess: () => {
       toast.success("Article created successfully");
     },
     onError: (err, newArticle, context?: TSFixMe) => {

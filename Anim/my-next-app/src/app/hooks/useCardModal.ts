@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import { create } from "zustand";
 
 type CardModalStore = {

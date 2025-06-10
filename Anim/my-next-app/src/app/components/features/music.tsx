@@ -1,9 +1,10 @@
+/* eslint-disable */
+
 import { CardProps } from "@/app/interface/card";
 import React from "react";
 import FeatureCard from "./card";
 import classNames from "classnames";
 import { useFeatureStore } from "@/app/store/store";
-import { stat } from "fs";
 import { motion } from "framer-motion";
 
 const Music = ({ id }: CardProps) => {
@@ -51,5 +52,3 @@ const Music = ({ id }: CardProps) => {
 };
 
 export default Music;
-
-

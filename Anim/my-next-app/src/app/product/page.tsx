@@ -1,16 +1,12 @@
 import React from "react";
-import HompageArdCard from "../components/arc-card/hompage-ard-card";
-
-const PRODUCT_DATA = [
-  { name: "Product 1", title: "Description of Product 1" },
-  { name: "Product 2", title: "Description of Product 2" },
-  { name: "Product 3", title: "Description of Product 3" },
-];
 
 const ProductPage = () => {
   return (
     <div className="mt-[5.4rem]">
-      <HompageArdCard data={PRODUCT_DATA} />
+      <h1 className="text-3xl font-bold text-center mb-8">Product Page</h1>
+      <p className="text-center text-gray-600 mb-8">
+        This page is under construction. Stay tuned for updates!
+      </p>
     </div>
   );
 };

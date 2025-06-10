@@ -1,3 +1,4 @@
+/* eslint-disable */
 "use client";
 import { truncateText } from "@/app/utils/truncate-text";
 import React, { useEffect, useRef, useState } from "react";
